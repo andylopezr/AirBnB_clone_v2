@@ -9,7 +9,7 @@ sed -i "/redirect_me/ a\\\terror_page 404 /404.html;" /etc/nginx/sites-available
 service nginx start
 mkdir -p /data/web_static/releases/test/
 mkdir -p /data/web_static/shared/
-        <head>
+echo "<head>
         </head>
         <body>
             Holberton School
