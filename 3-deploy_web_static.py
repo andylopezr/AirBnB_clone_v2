@@ -8,6 +8,7 @@ from os.path import exists, isdir
 env.hosts = ['35.190.169.147', '34.75.12.144']
 env.user = "ubuntu"
 
+
 def do_pack():
     """generates a tgz archive"""
     try:
