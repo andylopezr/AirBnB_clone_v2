@@ -3,9 +3,6 @@
 apt-get -y update
 apt-get -y upgrade
 apt-get -y install nginx
-sed -i "/listen \[::\]:80 default_server/ a\\\trewrite ^/redirect_me https://github.com/andylopezr permanent;" /etc/nginx/sites-available/default
-sed -i "/listen \[::\]:80 default_server/ a\\\tadd_header X-Served-By \"\$HOSTNAME\";" /etc/nginx/sites-available/default
-sed -i "/redirect_me/ a\\\terror_page 404 /404.html;" /etc/nginx/sites-available/default
 mkdir -p /data/web_static/releases/test/
 mkdir -p /data/web_static/shared/
 echo "<html>
